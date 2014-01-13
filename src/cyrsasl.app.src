@@ -1,0 +1,14 @@
+{application, cyrsasl,
+ [
+  {description, "cyrsasl"},
+  {vsn, git},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {modules, [	 
+	     cyrsasl,cyrsasl_anonymous,cyrsasl_digest,cyrsasl_plain
+  ]}
+  %%{mod,{cyrsasl,[]}}
+  %%env will be based on rel/vars/
+ ]}.
